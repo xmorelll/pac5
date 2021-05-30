@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <div *ngIf="margarita" class="row animate__animated animate__fadeIn animate__bounce">
+    <div class="col-md-9">
+      <p><strong>Name:</strong> {{margarita.strDrink}}</p>
+      <img style="height: 80%; width: 80%;" class="rounded" src="{{margarita.strDrinkThumb}}" alt="">
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-danger" routerLink="/">Back</a>
+    </div>
+  </div>
+</div>
