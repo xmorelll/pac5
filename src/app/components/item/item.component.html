@@ -2,6 +2,27 @@
   <div *ngIf="margarita" class="row animate__animated animate__fadeIn animate__bounce">
     <div class="col-md-9">
       <p><strong>Name:</strong> {{margarita.strDrink}}</p>
+      <p><strong>Instructions:</strong> {{margarita.strInstructions}}</p>
+      <p>
+        <strong>Ingredients:</strong>
+      </p>
+      <ul>
+        <li *ngIf="margarita.strIngredient1"> {{margarita.strIngredient1}} <span *ngIf="margarita.strMeasure1">( {{margarita.strMeasure1}})</span></li>
+        <li *ngIf="margarita.strIngredient2"> {{margarita.strIngredient2}} <span *ngIf="margarita.strMeasure2">( {{margarita.strMeasure2}})</span></li>
+        <li *ngIf="margarita.strIngredient3"> {{margarita.strIngredient3}} <span *ngIf="margarita.strMeasure3">( {{margarita.strMeasure3}})</span></li>
+        <li *ngIf="margarita.strIngredient4"> {{margarita.strIngredient4}} <span *ngIf="margarita.strMeasure4">( {{margarita.strMeasure4}})</span></li>
+        <li *ngIf="margarita.strIngredient5"> {{margarita.strIngredient5}} <span *ngIf="margarita.strMeasure5">( {{margarita.strMeasure5}})</span></li>
+        <li *ngIf="margarita.strIngredient6"> {{margarita.strIngredient6}} <span *ngIf="margarita.strMeasure6">( {{margarita.strMeasure6}})</span></li>
+        <li *ngIf="margarita.strIngredient7"> {{margarita.strIngredient7}} <span *ngIf="margarita.strMeasure7">( {{margarita.strMeasure7}})</span></li>
+        <li *ngIf="margarita.strIngredient8"> {{margarita.strIngredient8}} <span *ngIf="margarita.strMeasure8">( {{margarita.strMeasure8}})</span></li>
+        <li *ngIf="margarita.strIngredient9"> {{margarita.strIngredient9}} <span *ngIf="margarita.strMeasure9">( {{margarita.strMeasure9}})</span></li>
+        <li *ngIf="margarita.strIngredient10"> {{margarita.strIngredient10}} <span *ngIf="margarita.strMeasure10">( {{margarita.strMeasure10}})</span></li>
+        <li *ngIf="margarita.strIngredient11"> {{margarita.strIngredient11}} <span *ngIf="margarita.strMeasure11">( {{margarita.strMeasure11}})</span></li>
+        <li *ngIf="margarita.strIngredient12"> {{margarita.strIngredient12}} <span *ngIf="margarita.strMeasure12">( {{margarita.strMeasure12}})</span></li>
+        <li *ngIf="margarita.strIngredient13"> {{margarita.strIngredient13}} <span *ngIf="margarita.strMeasure13">( {{margarita.strMeasure13}})</span></li>
+        <li *ngIf="margarita.strIngredient14"> {{margarita.strIngredient14}} <span *ngIf="margarita.strMeasure14">( {{margarita.strMeasure14}})</span></li>
+        <li *ngIf="margarita.strIngredient15"> {{margarita.strIngredient15}} <span *ngIf="margarita.strMeasure15">( {{margarita.strMeasure15}})</span></li>
+      </ul>
       <img style="height: 80%; width: 80%;" class="rounded" src="{{margarita.strDrinkThumb}}" alt="">
     </div>
     <div class="col-md-3">

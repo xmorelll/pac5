@@ -27,7 +27,6 @@ export class ItemComponent implements OnInit {
       }
 
       this.margarita = margaritas.drinks[0];
-      console.log(this.margarita);
     });
   }
 
