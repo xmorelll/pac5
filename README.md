@@ -1,27 +1,29 @@
-# PacProject
+# Ejercicio 1:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+Lighthouse:
 
-## Development server
+Despues de ver el informe generado por lighthouse destacar:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Desktop:
+  * Performance 99
+  * Accessibility 93
+  * Best Practices 93
+  * SEO 89
+  
+* Mobile
+  * Performance 73
+  * Accessibility 93
+  * Best Practices 93
+  * SEO 91
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para la configuración del service worker se ha usado la misma configuración del ejercicio de la teoria. Seguramente seria bueno aumentar el tiempo de cache, ya que no se esperan muchos cambios en la información de la pagina, y aunque cambien mostrar la version anterior no seria un error. Me refiero a que la pagina web no muestra valores de criptomonedas donde es importante tener la información actualizada. Al tratarse de información sobre margaritas, si un usuario sin internet ve una versión previa pues no seria un gran problema, ya que seguro que también es valida aunque no este actualizada a la ultima versión.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Al configurar Angular Universal usando un schematics, se han creado 3 documentos:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* src/main.server.ts:
+* src/app/app.server.module.ts:
+* server.ts:
